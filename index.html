@@ -55,7 +55,6 @@
 <script>
 // 🔹 SEM SI NAPIŠ SVŮJ SEZNAM SPZ
 const seznamSPZ = `
-Evgenia
 Blahák
 2BR2993
 4C39960
@@ -137,10 +136,10 @@ function hledat() {
        return;
    }
    if (seznamSPZ.includes(input)) {
-       vysledek.textContent = "ANO";
+       vysledek.textContent = "ANO: " + input;
        vysledek.style.color = "green";
    } else {
-       vysledek.textContent = "NE";
+       vysledek.textContent = "NE: " + input;
        vysledek.style.color = "red";
    }
 }
